@@ -1,0 +1,371 @@
+<html>
+  <head>
+    <title>Welcome to nutanix support portal</title>
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <style>
+      @font-face {
+          font-family: nutanix;
+          src: url("./NutanixSoft-Medium.otf") format("opentype");
+      }
+      @font-face {
+        font-family: nutanix;
+        font-weight: 600;
+        src: url("./NutanixSoft-Semibold.otf") format("opentype");
+      }
+      @font-face {
+          font-family: nutanix;
+          font-weight: bold;
+          src: url("./NutanixSoft-Bold.otf") format("opentype");
+      }
+      body {
+        font-family: nutanix;
+        margin: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        color: inherit;
+        text-decoration: none;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        display: inline-block;
+      }
+      .header {
+        height: 60px;
+        background: #22272E;
+        position: relative;
+      }
+      .header >div {
+        display: inline-block;
+      }
+      .header .logo {
+        padding: 0px 20px;
+        position: relative;
+        top: -1px;
+      }
+      .logo-text {
+        padding: 0 15px 0 0;
+        font-weight: 600;
+        color: #fff;
+      }
+      .logo-separator {
+        height: 20px;
+        position: relative;
+        padding: 0 !important;
+        top: 5px;
+        border-right: 1px solid #37414B;
+      }
+      .nav-item {
+        color: #fff;
+        font-weight: normal;
+        padding: 20px 0 20px 15px;
+      }
+      .nav-item .nav-pulldown {
+        color: #000;
+        visibility: hidden; /* hides sub-menu */
+        opacity: 0;
+        transform: translateY(0%);
+        position: absolute;
+        top: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 0 0 1px rgba(0, 0, 0, 0.05);
+        left: 0;
+        width: 100%;
+        transform: translateY(-2em);
+        z-index: -1;
+        transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
+        padding: 25px 190px;
+      }
+      .arrow {
+        visibility: hidden;
+        width: 0;
+        left: 40%;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6px 6px 6px;
+        bottom: -14px;
+        position: relative;
+        border-color: transparent transparent #ffffff transparent;
+      }
+      .nav-item:hover {
+        color: #fff;
+      }
+      .nav-item:hover .nav-pulldown {
+        visibility: visible; /* shows sub-menu */
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0%);
+        transition-delay: 0s, 0s, 0.2s;
+      }
+      .nav-item:hover .arrow {
+        visibility: visible;
+      }
+      .continuous-items li {
+        padding: 0 20px;
+      }
+      .non-continuous-items li {
+        padding: 10px 0;
+      }
+      .nav-img {
+        float: right;
+        padding: 23px 10px;
+      }
+      .less-top-img {
+        padding: 20px 10px;
+      }
+      .lsni {
+        margin: 0 15px;
+        top: 35%;
+      }
+      .on-right {
+        float: right;
+      }
+      .right-alligned {
+        text-align: right;
+      }
+      .right-pulldown {
+        padding-right: 0 !important;
+      }
+      .img-pulldown {
+        padding: 27px 15px 27px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"> <img src="./logo.svg" /> </div>
+      <div class="logo-text"><a href="/">Support Portal</a> </div>
+      <div class="logo-separator"></div>
+      <div class="nav-item">
+        <div class="nav-item-header"><a href="/">My Dashboard</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown">
+          <ul class="continuous-items">
+            <li>
+              <a href="/">360 View</a>
+            </li>
+            <li>
+              <a href="/">My Insights</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-item-header"><a href="/">Support Cases</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown">
+          <ul class="continuous-items">
+            <li>
+              <a href="/">Open a Support Case</a>
+            </li>
+            <li>
+              <a href="/">View Support Cases</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-item-header"><a href="/">Documentation</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown">
+          <ul class="non-continuous-items">
+            <li class="col-xs-4">
+              <a href="/">Software Documentation</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Hardware Compatibility Lists</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Field Advisories</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Hardware Replacement Documentation</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Compatibility Matrix</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Security Advisories</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Knowledge Base</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">AOS Upgrade Path</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Product Notices</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Solutions Documentation</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">EOL Information</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Terms and Conditions</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Webinar Recordings</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">EOL Policy and archive</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-item-header"><a href="/">Downloads</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown">
+          <ul class="non-continuous-items">
+            <li class="col-xs-4">
+              <a href="/">AOS (NOS)</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Hypervisor Details</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Foundation</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Acropolis File Services (AFS)</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Nutanix Xtract</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Phoenix</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Prism Central</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Tools and Firmware</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">FVP and Architecht</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">IBM Power PC </a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">IBM Power PC </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-item-header"><a href="/">My Products</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown">
+          <ul class="non-continuous-items">
+            <li class="col-xs-4">
+              <a href="/">Installed Base</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Licenses</a>
+            </li>
+            <li class="col-xs-4">&nbsp;</li>
+            <li class="col-xs-4">
+              <a href="/">Assets</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Node Licenses</a>
+            </li>
+            <li class="col-xs-4">&nbsp;</li>
+            <li class="col-xs-4">
+              <a href="/">Clusters</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Coin Licenses</a>
+            </li>
+            <li class="col-xs-4">&nbsp;</li>
+            <li class="col-xs-4">&nbsp;</li>
+            <li class="col-xs-4">
+              <a href="/">Coin Calculator</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-item-header"><a href="/">Security</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown">
+          <ul class="non-continuous-items">
+            <li class="col-xs-4">
+              <a href="/">Security Contact and Procedures</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">Product Signing (GPG) Keys</a>
+            </li>
+            <li class="col-xs-4">&nbsp;</li>
+            <li class="col-xs-4">
+              <a href="/">Security Advisories</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="/">API Keys</a>
+            </li>
+            <li class="col-xs-4">&nbsp;</li>
+            <li class="col-xs-4">
+              <a href="/">STIG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-item-header"><a href="/">Community</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown">
+          <ul class="continuous-items">
+            <li>
+              <a href="/">.NEXT Forums</a>
+            </li>
+            <li>
+              <a href="/">Partner Portal</a>
+            </li>
+            <li>
+              <a href="/">Sizer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img class="nav-img img-pulldown" src="./pulldown.svg">
+      <div class="nav-item on-right">
+        <div class="nav-item-header"><a href="/">Jane Doe</a></div>
+        <div class="arrow"></div>
+        <div class="nav-pulldown right-pulldown">
+          <ul class="continuous-items right-alligned">
+            <li>
+              <a href="/">Login As</a>
+            </li>
+            <li>
+              <a href="/">Subscriptions</a>
+            </li>
+            <li>
+              <a href="/">Language</a>
+            </li>
+            <li>
+              <a href="/">Settings</a>
+            </li>
+            <li>
+              <a href="/">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img class="nav-img less-top-img" src="./bell.svg">
+      <div class="logo-separator nav-img lsni"></div>
+      <img class="nav-img" src="./question.svg">
+      <img class="nav-img" src="./search.svg">
+      <img class="nav-img" src="./bookmark.svg">
+      </div>
+    </div>
+  </body>
+</html>

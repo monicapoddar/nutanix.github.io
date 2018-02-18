@@ -1,0 +1,17 @@
+
+<svg width="44px" height="20px" viewBox="0 0 44 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-1126.000000, -19.000000)">
+            <g id="Group-3" transform="translate(1126.000000, 19.000000)">
+                <path d="M8.95900335,15 C8.63858466,16.1633138 7.78296835,17 6.77162637,17 C5.76050311,17 4.90466809,16.1633138 4.58446812,15 L8.95900335,15 Z M13.3950988,13.2607425 C13.5012949,13.3339488 13.5410656,13.46005 13.5410656,13.5772649 C13.5410656,13.6303712 13.5345077,13.6769186 13.5146223,13.730025 C13.4481969,13.8937873 13.2977876,14 13.1183965,14 L0.422669099,14 C0.245605017,14 0.092868736,13.8961146 0.026443262,13.730025 C0.00655792897,13.6769186 0,13.6303712 0,13.5772649 C0,13.46005 0.039770666,13.3339488 0.145966806,13.2607425 C4.65612957,10.1932679 1.27012276,3 6.77159053,3 C12.2730583,3 8.88726303,10.1932679 13.3950988,13.2607425 Z" id="+++-red" fill="#22A5F7"></path>
+                <rect id="Rectangle-4" fill="#22A5F7" x="24" y="0" width="20" height="20" rx="10"></rect>
+                <text id="8" font-family="NutanixSoft-Semibold, Nutanix Soft" font-size="12" font-weight="500" line-spacing="8" fill="#FFFFFF">
+                    <tspan x="30" y="14">8</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
