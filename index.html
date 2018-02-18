@@ -70,9 +70,9 @@
       .nav-item .nav-pulldown {
         color: #000;
         background: #fff;
+        font-weight: normal;
         visibility: hidden; /* hides sub-menu */
         opacity: 0;
-        transform: translateY(0%);
         position: absolute;
         top: 100%;
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 0 0 1px rgba(0, 0, 0, 0.05);
@@ -80,7 +80,6 @@
         width: 100%;
         transform: translateY(-2em);
         z-index: -1;
-        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
         padding: 25px 190px;
       }
       .arrow {
@@ -103,6 +102,8 @@
         opacity: 1;
         z-index: 1;
         transform: translateY(0%);
+
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
         transition-delay: 0s, 0s, 0.3s;
       }
       .nav-item:hover .arrow {
@@ -137,6 +138,10 @@
       .img-pulldown {
         padding: 27px 15px 27px 5px;
       }
+      .back-page {
+        position: relative;
+        z-index: -2;    
+      }
       .back-page-image {
         margin-top: 50px;
         width: 100%;
@@ -144,6 +149,9 @@
       .nav-pulldown ul li a:hover {
         text-decoration: underline;
         color: #0ea3fa;
+      }
+      .bold-text {
+        font-weight: 600;
       }
     </style>
   </head>
@@ -186,7 +194,7 @@
         <div class="nav-pulldown">
           <ul class="non-continuous-items">
             <li class="col-xs-4">
-              <a href="./index.html">Software Documentation</a>
+              <a href="./documentation.html">Software Documentation</a>
             </li>
             <li class="col-xs-4">
               <a href="./index.html">Hardware Compatibility Lists</a>
@@ -277,10 +285,10 @@
         <div class="nav-pulldown">
           <ul class="non-continuous-items">
             <li class="col-xs-4">
-              <a href="./index.html">Installed Base <img src="./side-cheveron.svg"></a>
+              <a href="./index.html" class="bold-text">Installed Base <img src="./side-cheveron.svg"></a>
             </li>
             <li class="col-xs-4">
-              <a href="./index.html">Licenses <img src="./side-cheveron.svg"></a>
+              <a href="./index.html" class="bold-text">Licenses <img src="./side-cheveron.svg"></a>
             </li>
             <li class="col-xs-4">&nbsp;</li>
             <li class="col-xs-4">
